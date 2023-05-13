@@ -2,6 +2,12 @@ package model;
 
 import java.util.List;
 
+/* Criado atributo "size" pelos exemplos dados, porem talvez seja interessante criar uma
+outra classe para caracteristicas e atribuir como uma lista, seria uma solucao mais "generica".
+Ha novamente uma lista de imagens, porem o construtor nao obriga seu uso.
+Novamente, talvez fosse interessante a criacao de metodos para manipulacao da informacao contida
+na lista e nao apenas da lista em si.
+* */
 public class SKU {
     private String barcode;
     private String size;
