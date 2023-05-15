@@ -1,5 +1,5 @@
 package model;
-import java.util.List;
+import java.util.ArrayList;
 
 /* Criacao do Produto pelo construtor exige uma lista de sku.
 Como foi criado setter e getter de forma generica, e recomendado a criacao de metodos para
@@ -11,10 +11,10 @@ public class Product {
     private String description;
     private String brand;
     private String department;
-    private List<SKU>skus;
-    private List<Image>images;
+    private ArrayList<SKU> skus;
+    private ArrayList<Image>images;
 
-    public Product(String name, String description, String brand, String department, List<SKU> skus, List<Image> images) {
+    public Product(String name, String description, String brand, String department, ArrayList<SKU> skus, ArrayList<Image> images) {
         this.name = name;
         this.description = description;
         this.brand = brand;
@@ -55,19 +55,19 @@ public class Product {
         this.department = department;
     }
 
-    public List<SKU> getSkus() {
+    public ArrayList<SKU> getSkus() {
         return skus;
     }
 
-    public void setSkus(List<SKU> skus) {
+    public void setSkus(ArrayList<SKU> skus) {
         this.skus = skus;
     }
 
-    public List<Image> getImages() {
+    public ArrayList<Image> getImages() {
         return images;
     }
 
-    public void setImages(List<Image> images) {
+    public void setImages(ArrayList<Image> images) {
         this.images = images;
     }
 }

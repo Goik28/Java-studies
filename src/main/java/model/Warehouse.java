@@ -1,6 +1,6 @@
 package model;
 
-import java.util.List;
+import java.util.ArrayList;
 
 /*Criado classe para armazens, cada armazem tem uma lista de produtos.
 O construtor estabelce que pode ser criado um armazem sem produtos.
@@ -11,7 +11,7 @@ a busca, insercao e remocao de itens ao inves de manipular a lista inteira.
 public class Warehouse {
     private String name;
     private String address;
-    private List<Product> products;
+    private ArrayList<Product> products;
 
     public Warehouse(String name, String address) {
         this.name = name;
@@ -34,11 +34,11 @@ public class Warehouse {
         this.address = address;
     }
 
-    public List<Product> getProducts() {
+    public ArrayList<Product> getProducts() {
         return products;
     }
 
-    public void setProducts(List<Product> products) {
+    public void setProducts(ArrayList<Product> products) {
         this.products = products;
     }
 }

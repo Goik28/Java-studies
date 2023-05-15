@@ -1,6 +1,6 @@
 package model;
 
-import java.util.List;
+import java.util.ArrayList;
 
 /* Criado atributo "size" pelos exemplos dados, porem talvez seja interessante criar uma
 outra classe para caracteristicas e atribuir como uma lista, seria uma solucao mais "generica".
@@ -12,7 +12,7 @@ public class SKU {
     private String barcode;
     private String size;
     private int quantity;
-    private List<Image>images;
+    private ArrayList<Image>images;
 
     public SKU(String barcode, String size, int quantity) {
         this.barcode = barcode;
@@ -44,11 +44,11 @@ public class SKU {
         this.quantity = quantity;
     }
 
-    public List<Image> getImages() {
+    public ArrayList<Image> getImages() {
         return images;
     }
 
-    public void setImages(List<Image> images) {
+    public void setImages(ArrayList<Image> images) {
         this.images = images;
     }
 }
