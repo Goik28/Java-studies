@@ -1,4 +1,4 @@
-package model;
+package example.model;
 
 //Criado classe de imagens para facilitar a criacao e leitura de imagens para os produtos e SKUs.
 public class Image {

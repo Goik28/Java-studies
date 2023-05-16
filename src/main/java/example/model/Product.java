@@ -1,12 +1,18 @@
-package model;
-import java.util.ArrayList;
+package example.model;
 
+import javax.persistence.*;
+import java.util.ArrayList;
 /* Criacao do Produto pelo construtor exige uma lista de sku.
 Como foi criado setter e getter de forma generica, e recomendado a criacao de metodos para
 manipulacao do conteudo das listas, e nao apenas da lista em si.
 Caso houver campos que nao devam ser manipulados, adicionar o identificador "final".
 * */
+
+@Entity
 public class Product {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String name;
     private String description;
     private String brand;
@@ -21,6 +27,14 @@ public class Product {
         this.department = department;
         this.skus = skus;
         this.images = images;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
